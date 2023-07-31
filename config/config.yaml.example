@@ -1,0 +1,16 @@
+dev: true
+
+server:
+  port: "8888"
+  allow_origins:
+    - "http://127.0.0.1:3000"
+db:
+  user_name: "root"
+  password: "root"
+  address: "root"
+  db_name: "root"
+
+jwt:
+  secret: "secretKey"
+  issuer: "issuer"
+  expires: 48
