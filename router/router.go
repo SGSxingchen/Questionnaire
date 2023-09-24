@@ -25,15 +25,7 @@ func InitRouter() {
 }
 func SetRouter() {
 	// 处理 WebSocket 连接请求
-	//Router.GET("/ws", controller.LinkChatRoom)
-	//Router.POST("/api/chatgpt/chat1", middleware.Authorization, controller.ChatgptChatgPRC)
-	//Router.POST("/api/chatgpt/chat", middleware.Authorization, controller.ChatgptChat)
-	//Router.POST("/api/user/history_message", middleware.Authorization, controller.GetHistoryMessage)
-	//Router.POST("/api/user/FirstMessage", middleware.Authorization, controller.FirstMessage)
-	////命名规范 URL的path部分使用 系统/模块/操作 的格式，如 api/user/register
-	//Router.POST("/api/user/register", controller.Register)
-	//Router.GET("/api/user/is_register_name", controller.NameIsRegister)
-	//Router.GET("/api/user/is_register_email", controller.EmailIsRegister)
+
 	Router.POST("/api/user/login", user.Login)
 	Router.POST("/questionnaires/create", questionnaireController.CreateQuestionnaire)
 	Router.GET("/questionnaires/getAll", questionnaireController.GetAllQuestionnaires)
